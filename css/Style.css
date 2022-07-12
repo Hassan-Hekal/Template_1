@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px,auto);
+    grid-template-areas: 
+    "head head head head"
+    "sideleft nav nav nav"
+    "sideleft content content content"
+    "sideleft content content content"
+    "footer footer footer footer"
+}
+.box {
+    background-color: aquamarine;
+    text-align: center;
+}
+.head {
+    grid-area: head;
+}
+.nav {
+    grid-area: nav;
+}
+.sideleft {
+    grid-area: sideleft;    
+}
+.contact {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+
+}
+.footer {
+    grid-area: footer;
+}
+p {
+    background-color: gray;
+}
